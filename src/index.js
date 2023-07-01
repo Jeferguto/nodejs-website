@@ -22,5 +22,5 @@ app.get('/about',(req, res) => res.render('about'))
 app.get('/contact',(req, res) => res.render('contact')) */
 
 
-app.listen(3000)
-console.log('Server is listen on port', 3000)
+app.listen(process.env.PORT || 3000)
+console.log('Server is listen on port', process.env.PORT || 3000)
